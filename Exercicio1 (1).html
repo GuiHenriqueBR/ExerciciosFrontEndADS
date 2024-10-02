@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Barra Lateral</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        .sidebar {
+            width: 20%;
+            height: 100vh;
+            background-color: #3498db; /* Cor de fundo da barra lateral */
+            float: left;
+            position: relative;
+        }
+
+        .sidebar nav {
+            padding: 20px;
+        }
+
+        .sidebar nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+
+        .main-content {
+            width: 80%;
+            height: 100vh;
+            background-color: #ecf0f1; /* Cor de fundo do conteúdo principal */
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .main-content h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <nav>
+            <a href="#">Página Inicial</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div>
+            <h1>Seja bem-vindo ao nosso site</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at nisi vel nisi tincidunt vehicula.</p>
+        </div>
+    </div>
+
+</body>
+</html>
